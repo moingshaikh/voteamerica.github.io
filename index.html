@@ -194,7 +194,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="RiderAccommodationNotes">Notes</label>
-                                <textarea class="form-input" id="RiderAccommodationNotes" placeholder="Accommodation requirements e.g. service animal, assistance folding equipment, assistance entering/exiting the vehicle, etc." name="RiderAccommodationNotes" rows="4"></textarea>
+                                <textarea class="form-input" id="RiderAccommodationNotes" placeholder="Accommodation requirements: E.g. service animal, assistance folding equipment, assistance entering/exiting the vehicle, car seat or booster needed for child (please include age), must also collect non-voting assistant or companion, etc. Anything else the driver should know?" name="RiderAccommodationNotes" rows="4"></textarea>
                             </div>
                         </fieldset>
 
@@ -540,15 +540,12 @@
 
     <script>
         if (window.location.search === '?souls2thepolls') {
-
             $('#intro').addClass('s2tp');
-
             $('#logo').attr({
                 src: 'images/logo-souls2thepolls.png',
                 width: 661,
                 height: 300
             });
-
             $('a[href^="/"]').each(function() {
                 $(this).attr('href', $(this).attr('href') + '?souls2thepolls');
             });
